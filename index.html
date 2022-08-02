@@ -4,87 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Survey Form</title>
   </head>
+
   <body>
-    <header>
-      <h1>Survey Form</h1>
-      <p>Thank You For Taking Your Time To Give Us FeedBack</p>
-    </header>
+    <div class="form_area">
+      <header class="main_header">
+        <h1>Survey Form</h1>
+        <p>Thank You For Taking Your Time To Give Us FeedBack</p>
+      </header>
 
-    <form>
-      <div>
-        <label for="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter Your Name"
-          required
-        />
-      </div>
+      <form>
+        <div>
+          <label for="name" class="label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Your Name"
+            required
+          />
+        </div>
 
-      <div>
-        <label for="email">Email</label
-        ><input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter Your Email"
-        />
-      </div>
+        <div>
+          <label for="email" class="label">Email</label
+          ><input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Your Email"
+          />
+        </div>
 
-      <div>
-        <label for="age">Age</label
-        ><input
-          type="number"
-          id="age"
-          name="age"
-          placeholder="Enter Your Age"
-        />
-      </div>
+        <div>
+          <label for="age" class="label">Age</label
+          ><input
+            type="number"
+            id="age"
+            name="age"
+            placeholder="Enter Your Age"
+          />
+        </div>
 
-      <div>
-        <label for="role">Choose A Role That Best Describes You</label>
-        <select name="select-role" id="role">
-          <option value="Select Your Role">Select Your Role</option>
-          <option value="Student">Student</option>
-          <option value="Teacher">Teacher</option>
-          <option value="Driver">Driver</option>
-          <option value="Programmer">Programmer</option>
-        </select>
-      </div>
+        <div>
+          <label for="role" class="label"
+            >Choose A Role That Best Describes You</label
+          >
+          <select name="select-role" id="role">
+            <option value="Select Your Role">Select Your Role</option>
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Driver">Driver</option>
+            <option value="Programmer">Programmer</option>
+          </select>
+        </div>
 
-      <div>
-        <label for="recommendation"
-          >Would You Recommend Our Product To A Friend?</label
-        >
-        <input type="radio" name="recommendation" />Never
-        <input type="radio" name="recommendation" />Maybe
-        <input type="radio" name="recommendation" />Likely
-        <input type="radio" name="recommendation" checked />Definitely
-      </div>
+        <div>
+          <label for="rating" class="label"
+            >Would You Recommend Our Product To A Friend?</label
+          >
+          <span><input type="radio" name="rating" id="rating" />Never</span>
+          <span><input type="radio" name="rating" id="rating" />Maybe</span>
+          <span><input type="radio" name="rating" id="rating" />Likely</span>
+          <span
+            ><input type="radio" name="rating" id="rating" />Definitely</span
+          >
+        </div>
 
-      <div>
-        <label for="review"
-          >Select Things That You Liked About Our Product</label
-        >
-        <input type="checkbox" name="review" id="review" />UI
-        <input type="checkbox" name="review" id="review" />Features
-        <input type="checkbox" name="review" id="review" />Service
-        <input type="checkbox" name="review" id="review" />Simpleness
-      </div>
+        <div>
+          <label for="review" class="label"
+            >Select Things That You Liked About Our Product</label
+          >
+          <span><input type="checkbox" name="review" id="review" />UI</span>
+          <span
+            ><input type="checkbox" name="review" id="review" />Features</span
+          >
+          <span
+            ><input type="checkbox" name="review" id="review" />Service</span
+          >
+          <span
+            ><input type="checkbox" name="review" id="review" />Simpleness</span
+          >
+        </div>
 
-      <div>
-        <label for="remark">Remarks</label
-        ><textarea
-          name="remark"
-          id="remark"
-          placeholder="Tell Us How We Can Improve.."
-          cols="30"
-          rows="10"
-        ></textarea>
-      </div>
-    </form>
+        <!-- <div class="dif">
+          <label for="review" class="label"
+            >Select Things That You Liked About Our Product</label
+          >
+          <input type="checkbox" name="review" id="review" />UI
+          <input type="checkbox" name="review" id="review" />Features
+          <input type="checkbox" name="review" id="review" />Service
+          <input type="checkbox" name="review" id="review" />Simpleness
+        </div> -->
+
+        <div>
+          <label for="remark" class="label">Remarks</label
+          ><textarea
+            name="remark"
+            id="remark"
+            placeholder="Tell Us How We Can Improve.."
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
